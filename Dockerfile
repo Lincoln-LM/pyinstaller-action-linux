@@ -1,6 +1,8 @@
 FROM ubuntu:22.04
 SHELL ["/bin/bash", "-i", "-c"]
 
+ARG DEBIAN_FRONTEND=noninteractive
+
 ARG PYTHON_VERSION=3.11.0
 ARG PYINSTALLER_VERSION=3.6
 
