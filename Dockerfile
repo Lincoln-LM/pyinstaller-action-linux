@@ -27,10 +27,6 @@ RUN \
         libssl-dev \
         zlib1g-dev \
         libffi-dev \
-        #optional libraries
-        libgdbm-dev \
-        libgdbm3 \
-        uuid-dev \
         #upx
         upx \
     # required because openSSL on Ubuntu 12.04 and 14.04 run out of support versions of OpenSSL
