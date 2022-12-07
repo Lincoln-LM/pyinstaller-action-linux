@@ -46,6 +46,6 @@ if [ -f requirements.txt ]; then
     /root/.pyenv/shims/pip install -r requirements.txt
 fi # [ -f requirements.txt ]
 
-/root/.pyenv/shims/pyinstaller --hidden-import='PIL._tkinter_finder' --clean -y --dist ./dist/linux --workpath /tmp $SPEC_FILE
+/root/.pyenv/shims/pyinstaller --clean -y --dist ./dist/linux --workpath /tmp $SPEC_FILE
 
 chown -R --reference=. ./dist/linux
