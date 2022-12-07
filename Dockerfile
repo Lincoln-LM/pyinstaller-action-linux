@@ -37,7 +37,7 @@ RUN \
     && echo 'eval "$(pyenv init -)"' >> ~/.bashrc \
     && source ~/.bashrc \
     # install python
-    && pyenv install $PYTHON_VERSION \
+    && PYTHON_CONFIGURE_OPTS="--enable-shared" pyenv install $PYTHON_VERSION \
     && pyenv global $PYTHON_VERSION \
     && pip install --upgrade pip \
     # install pyinstaller
