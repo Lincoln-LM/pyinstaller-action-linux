@@ -19,6 +19,7 @@ WORKDIR=${SRCDIR:-/src}
 
 SPEC_FILE=${4:-*.spec}
 
+/root/.pyenv/shims/python --version
 /root/.pyenv/shims/python -m pip install --upgrade pip wheel setuptools
 
 #
